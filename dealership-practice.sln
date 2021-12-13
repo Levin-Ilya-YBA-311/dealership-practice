@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dealership-practice", "dealership-practice\dealership-practice.csproj", "{03D50490-0E4B-4492-B507-2DFA6B1E07FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dealership-practice", "dealership-practice\dealership-practice.csproj", "{03D50490-0E4B-4492-B507-2DFA6B1E07FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{977B5669-4891-4947-869C-85A7EF5ECF8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{977B5669-4891-4947-869C-85A7EF5ECF8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM", "ORM\ORM.csproj", "{7495EEF6-6CBF-4210-B51E-D7100BFF865C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{977B5669-4891-4947-869C-85A7EF5ECF8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{977B5669-4891-4947-869C-85A7EF5ECF8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{977B5669-4891-4947-869C-85A7EF5ECF8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7495EEF6-6CBF-4210-B51E-D7100BFF865C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7495EEF6-6CBF-4210-B51E-D7100BFF865C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7495EEF6-6CBF-4210-B51E-D7100BFF865C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7495EEF6-6CBF-4210-B51E-D7100BFF865C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

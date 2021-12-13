@@ -9,24 +9,24 @@ namespace dealershippractice.Domain
     /// <summary>
     ///  класс Сотрудник.
     /// </summary>
-    class Woker
+    public class Worker
     {
-        public Woker(int id_woker, string fio, string function)
+        public Worker(int id_worker, string fio, string function)
         {
-            this.id_woker = id_woker;
-            this.fio = fio;
+            this.id_worker = id_worker;
+            this.Fio = fio;
             this.function = function;
         }
 
         /// <summary>
         /// Уникальный идентификатор.
         /// </summary>
-        public int id_woker { get; protected set; }
+        public int id_worker { get; protected set; }
 
         /// <summary>
         /// ФИО.
         /// </summary>
-        public string fio { get; protected set; }
+        public string Fio { get; protected set; }
 
         /// <summary>
         /// Роль.
@@ -39,7 +39,7 @@ namespace dealershippractice.Domain
 
         public override string ToString()
         {
-            return $"{this.fio} {this.function} ";
+            return $"{this.Fio} {this.function} ";
         }
     }
 }

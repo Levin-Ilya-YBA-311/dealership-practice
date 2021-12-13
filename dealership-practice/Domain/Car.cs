@@ -12,13 +12,13 @@ namespace dealershippractice.Domain
         /// конструктор 
         /// </summary>
         
-        public Car(int id_car, int id_brand, string model, int year, double engine_size, string color, double price)
+        public Car(int id_car, int id_brand, string model, int year, double engine_power, string color, double price)
         {
             this.id_car = id_car;
             this.id_brand = id_brand;
             this.model = model;
             this.year = year;
-            this.engine_size = engine_size;
+            this.engine_power = engine_power;
             this.color = color;
             this.price = price;
         }
@@ -40,9 +40,9 @@ namespace dealershippractice.Domain
         /// </summary>
         public int year { get; protected set; }
         /// <summary>
-        /// мощьность двигателя.
+        /// мощность двигателя.
         /// </summary>
-        public double engine_size { get; protected set; }
+        public double engine_power { get; protected set; }
         /// <summary>
         /// цвет автомобиля.
         /// </summary>

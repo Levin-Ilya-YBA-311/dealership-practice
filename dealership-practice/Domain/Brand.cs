@@ -11,7 +11,7 @@ namespace dealershippractice.Domain
     /// <summary>
     ///  класс Бренд (марка автомобиля).
     /// </summary>
-    class Brand
+    public class Brand
     {
         /// <summary>
         /// Конструктор инициализации 

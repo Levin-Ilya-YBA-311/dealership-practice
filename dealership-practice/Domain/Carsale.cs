@@ -9,7 +9,7 @@ namespace dealershippractice.Domain
     /// <summary>
     /// класс Продажа автомобиля.
     /// </summary>
-    class Carsale
+    public class Carsale
     {
         public Carsale(int id_carsale, int id_car, int id_worker, DateTime sale_date, double total_price, int flag_option)
         {
@@ -27,12 +27,12 @@ namespace dealershippractice.Domain
         public int id_carsale { get; protected set; }
 
         /// <summary>
-        /// Автомобиль (уникальный ключь).
+        /// Автомобиль (уникальный ключ).
         /// </summary>
         public int id_car { get; protected set; }
 
         /// <summary>
-        /// Сотрудник (уникальный ключь).
+        /// Сотрудник (уникальный ключ).
         /// </summary>
         public int id_worker { get; protected set; }
 

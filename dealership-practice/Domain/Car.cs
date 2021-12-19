@@ -24,33 +24,44 @@ namespace dealershippractice.Domain
         }
 
         /// <summary>
+        /// Инициализирует новый экземпляр класса <see cref="Car"/>.
+        /// </summary>
+        // в этом месте  protected - только для ORM
+        //
+        [Obsolete("For ORM only", true)]
+        protected Car()
+        {
+        }
+
+
+        /// <summary>
         /// Уникальный идентификатор.
         /// </summary>
-        public int id_car { get; protected set; }
+        public virtual int id_car { get; protected set; }
         /// <summary>
         /// Бренд-марка.
         /// </summary>
-        public int id_brand { get; protected set; }
+        public virtual int id_brand { get; protected set; }
         /// <summary>
         /// модель.
         /// </summary>
-        public string model { get; protected set; }
+        public virtual string model { get; protected set; }
         /// <summary>
         /// год выпуска.
         /// </summary>
-        public int year { get; protected set; }
+        public virtual int year { get; protected set; }
         /// <summary>
         /// мощность двигателя.
         /// </summary>
-        public double engine_power { get; protected set; }
+        public virtual double engine_power { get; protected set; }
         /// <summary>
         /// цвет автомобиля.
         /// </summary>
-        public string color { get; protected set; }
+        public virtual string color { get; protected set; }
         /// <summary>
         /// базовая стоимость.
         /// </summary>
-        public double price { get; protected set; }
+        public virtual double price { get; protected set; }
 
 
         /// <summary>

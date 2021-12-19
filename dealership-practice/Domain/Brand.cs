@@ -24,21 +24,31 @@ namespace dealershippractice.Domain
             this.country = country;
         }
 
+        /// <summary>
+        /// Инициализирует новый экземпляр класса <see cref="Brand"/>.
+        /// </summary>
+        // в этом месте  protected - только для ORM
+        //
+        [Obsolete("For ORM only", true)]
+        protected Brand()
+        {
+        }
 
         /// <summary>
         /// Уникальный идентификатор.
         /// </summary>
-        public int id_brand { get; protected set; }
+        public virtual int id_brand { get; protected set; }
+     
 
         /// <summary>
         /// Брэнд.
         /// </summary>
-        public string brand { get; protected set; }
+        public virtual string brand { get; protected set; }
 
         /// <summary>
         /// Страна.
         /// </summary>
-        public string country { get; protected set; }
+        public virtual string country { get; protected set; }
 
 
         /// <summary>

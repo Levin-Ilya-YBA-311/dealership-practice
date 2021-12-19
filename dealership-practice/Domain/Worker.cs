@@ -19,19 +19,29 @@ namespace dealershippractice.Domain
         }
 
         /// <summary>
+        /// Инициализирует новый экземпляр класса <see cref="Worker"/>.
+        /// </summary>
+        // в этом месте  protected - только для ORM
+        //
+        [Obsolete("For ORM only", true)]
+        protected Worker()
+        {
+        }
+
+        /// <summary>
         /// Уникальный идентификатор.
         /// </summary>
-        public int id_worker { get; protected set; }
+        public virtual int id_worker { get; protected set; }
 
         /// <summary>
         /// ФИО.
         /// </summary>
-        public string Fio { get; protected set; }
+        public virtual string Fio { get; protected set; }
 
         /// <summary>
         /// Роль.
         /// </summary>
-        public string function { get; protected set; }
+        public virtual string function { get; protected set; }
 
         /// <summary>
         /// переопределение метода ToString

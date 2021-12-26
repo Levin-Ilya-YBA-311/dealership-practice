@@ -7,7 +7,7 @@ namespace ORM.Repositories
     using System;
     using System.Linq;
     using System.Linq.Expressions;
-    using dealershippractice.Domain;
+    using Domain;
     using NHibernate;
 
     /// <summary>
@@ -54,7 +54,7 @@ namespace ORM.Repositories
         /// <inheritdoc/>
         public bool TryGet(int id, out Car Car)
         {
-            Car = this.GetAll().SingleOrDefault(d => d.id_car == id);
+            Car = this.GetAll().SingleOrDefault(d => d.Id_car == id);
             return Car != null;
         }
 
